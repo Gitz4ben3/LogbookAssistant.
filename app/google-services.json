@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "964260529785",
+    "project_id": "log-book-assistant",
+    "storage_bucket": "log-book-assistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964260529785:android:143fe908256b3dbc50f6a8",
+        "android_client_info": {
+          "package_name": "com.example.logbookassistant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAenovw2MW7X7ig_fKEHy3aT35EJ0njhV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

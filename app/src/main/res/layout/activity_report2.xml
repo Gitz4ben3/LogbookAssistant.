@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EEF4ED"
+    android:layout_height="match_parent"
+    tools:context=".Report2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:id="@+id/tt"
+        android:textColor="#7F00FC"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="@string/enter_the_problem_description"
+        />
+    <TextView
+        android:id="@+id/issue"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/tt"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/issue_description"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/issueSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/issue"
+        android:layout_marginStart="10dp"
+        tools:ignore="TouchTargetSizeCheck" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/issueSpinner"
+        android:text="@string/departments"
+        android:id="@+id/departments"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        />
+    <Spinner
+        android:id="@+id/departmentSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/departments"
+        android:layout_marginStart="10dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <Button
+        android:id="@+id/updateN"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/departmentSpinner"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/report"
+        app:cornerRadius="2sp" />
+</RelativeLayout>

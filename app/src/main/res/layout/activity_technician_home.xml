@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF4ED"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TechnicianHome"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textColor="#7F00FC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/welcome_back_to_the_technician_main"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewProblems"
+        android:clipChildren="true"
+        android:padding="10dp"
+        android:clickable="true"
+        android:layout_below="@id/main"
+        android:elevation="2dp"
+        android:layout_margin="10dp"
+        android:background="#A799B7"
+        android:backgroundTint="#A799B7"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/report_problem"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/view_reported_issues"
+            android:layout_marginTop="67dp"
+            android:layout_marginBottom="3dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/resolvedProblems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewProblems"
+        android:layout_margin="10dp"
+        android:background="#A799B7"
+        android:padding="10dp"
+        android:backgroundTint="#A799B7"
+        android:clickable="true"
+        android:clipChildren="true"
+        android:elevation="2dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/resolved_report" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="67dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="3dp"
+            android:gravity="center_horizontal"
+            android:text="@string/view_all_resolved_issues" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
